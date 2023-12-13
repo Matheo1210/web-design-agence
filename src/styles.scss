@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "grandis-extended";
+  src: url("assets/grandis-extended-black.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "grandis-extended", sans-serif;
+}
+
+:root {
+  --primary-color: #fbbb2c;
+  --secondary-color: #f4f3ef;
+  --color-text: #020100;
+  --color-card: #ffffff;
+}
