@@ -13,7 +13,12 @@
   <body>
     <div class="home">
       <nav>
-        <img class="logo" src="../../assets/Logo.png" alt="logo" />
+        <img
+          routerLink="/home"
+          class="logo"
+          src="../../assets/Logo.png"
+          alt="logo"
+        />
         <a class="element-navbar" routerLink="/home">Accueil</a>
         <a class="element-navbar" style="color: black" routerLink="/about"
           >Nos réalisations</a
@@ -134,7 +139,9 @@
             "
           >
             <p style="margin: 0">© 2023 Matheo</p>
-            <p style="cursor: pointer">Mentions Légales</p>
+            <a routerLink="/mentions-legales" style="cursor: pointer">
+              Mentions Légales
+            </a>
           </div>
         </div>
         <div class="group-icon-footer">

@@ -1,0 +1,14 @@
+body {
+  background-color: var(--secondary-color);
+}
+
+.home {
+  background: var(--primary-color);
+}
+
+.logo {
+  min-width: 7rem;
+  max-width: 7rem;
+  margin-right: 6rem;
+  cursor: pointer;
+}
