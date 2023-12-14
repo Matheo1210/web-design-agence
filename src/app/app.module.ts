@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -16,7 +17,7 @@ import { ProjetComponent } from './projet/projet.component';
     ProjetComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, ReactiveFormsModule],
+  imports: [BrowserModule, ReactiveFormsModule, RouterModule.forRoot([])],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
