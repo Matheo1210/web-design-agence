@@ -193,7 +193,7 @@ header {
 .realisation {
   display: flex;
   justify-content: center;
-  align-items: baseline;
+  align-items: center;
   margin-bottom: 10rem;
   align-items: center;
 }
@@ -357,6 +357,85 @@ footer {
   margin-bottom: 5rem;
 }
 
+.group-icon-footer {
+  display: flex;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 1500px) {
+  .input {
+    margin-bottom: 0;
+    margin-left: 18rem;
+  }
+  .project {
+    display: flex;
+  }
+  .title-project {
+    font-size: 1.4rem;
+  }
+  .espacement-home {
+    width: 52rem;
+    margin-left: 18rem;
+  }
+  .tableau {
+    margin-left: 18rem;
+  }
+
+  .project-details {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .input {
+    margin-bottom: 0;
+    margin-left: 18rem;
+  }
+  .project {
+    display: flex;
+  }
+  .title-project {
+    font-size: 1.4rem;
+  }
+  .espacement-home {
+    width: 52rem;
+    margin-left: 18rem;
+  }
+  .tableau {
+    margin-left: 18rem;
+  }
+
+  .project-details {
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .input {
+    display: flex;
+    margin-bottom: 0;
+    margin-left: 11rem;
+  }
+  .title-project {
+    font-size: 1.2rem;
+  }
+  .espacement-home {
+    width: 48rem;
+    margin-left: 11rem;
+  }
+  .tableau {
+    margin-left: 11rem;
+  }
+  .project-details {
+    margin-left: 1rem;
+  }
+  .realisation {
+    display: flex;
+    margin-left: -8rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -412,7 +491,7 @@ footer {
     margin-left: 0;
     margin-top: 0;
     margin-bottom: 0;
-    display: inline;
+    display: flex;
   }
   .title-project {
     font-size: 1rem;
@@ -420,8 +499,8 @@ footer {
   }
   .project {
     margin: auto;
-    margin-top: 4rem;
-    gap: 2rem;
+    margin-top: 3rem;
+    gap: 1rem;
   }
   .category {
     display: flex;
@@ -446,11 +525,12 @@ footer {
     height: 100%;
     justify-content: center;
     align-items: center;
-    max-width: 420px;
+    max-width: 350px;
   }
   .realisation {
     display: grid;
     grid-template-columns: 1fr;
+    margin-left: inherit;
   }
   .project-description {
     margin: auto;
@@ -467,37 +547,26 @@ footer {
     border: 1px solid #efeeea;
     border-radius: 5px;
     background: white;
-    width: -moz-fit-content;
-    width: 50%;
+    width: 13rem;
     margin: auto;
     margin-bottom: 1rem;
   }
   .fa-search {
     display: none;
   }
-}
-
-@media screen and (max-width: 1300px) {
-  .input {
-    display: flex;
+  .btn-category {
     margin-bottom: 0;
-    margin-left: 18rem;
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 0;
+    padding: 0.5rem 0.5rem;
+    font-size: 0.7rem;
   }
-  .project {
-    display: flex;
+  .footer {
+    flex-direction: column;
+    text-align: center;
   }
-  .title-project {
-    font-size: 1.4rem;
-  }
-  .espacement-home {
-    width: 52rem;
-    margin-left: 18rem;
-  }
-  .tableau {
-    margin-left: 18rem;
-  }
-
-  .project-details {
-    margin-left: 1rem;
+  .group-icon-footer {
+    display: none;
   }
 }
