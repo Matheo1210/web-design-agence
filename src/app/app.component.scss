@@ -37,14 +37,6 @@ nav {
   cursor: pointer;
 }
 
-.icon-footer {
-  text-decoration: none;
-  color: #4c4940;
-  padding: 0 1rem;
-  display: flex;
-  align-items: center;
-}
-
 .title {
   font-size: 2rem;
   font-weight: 700;
@@ -78,6 +70,11 @@ header {
   font-weight: bold;
   cursor: pointer;
   margin-left: 6rem;
+  transition: transform 0.3s ease;
+}
+
+.btn-contact:hover {
+  transform: scale(1.1);
 }
 
 .home-img {
@@ -94,6 +91,11 @@ header {
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.btn-commencer:hover {
+  transform: scale(1.1);
 }
 
 .btn-commencer::after {
@@ -168,11 +170,13 @@ header {
   margin-right: 10px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .btn-category:hover {
   background-color: #fbbb2c;
   color: var(--color-text);
+  transform: scale(1.1);
 }
 
 .btn-category i {
@@ -354,14 +358,54 @@ footer {
 
 .group-icon-footer {
   display: flex;
-  font-size: 2rem;
-  margin-right: 1rem;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.icon-footer-linkedin {
+  text-decoration: none;
+  color: var(--color-text);
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.icon-footer-discord {
+  text-decoration: none;
+  color: var(--color-text);
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.icon-footer-github {
+  text-decoration: none;
+  color: var(--color-text);
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.icon-footer-linkedin:hover {
+  transform: scale(1.1);
+}
+
+.icon-footer-discord:hover {
+  transform: scale(1.1);
+}
+
+.icon-footer-github:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 2000px) {
   .input {
     margin-bottom: 0;
-    margin-left: 23rem;
+    margin-left: 39rem;
   }
   .project {
     display: flex;
@@ -371,10 +415,10 @@ footer {
   }
   .espacement-home {
     width: 50rem;
-    margin-left: 23rem;
+    margin-left: 39rem;
   }
   .tableau {
-    margin-left: 23rem;
+    margin-left: 39rem;
   }
   .project-details {
     margin-left: -1rem;
@@ -588,7 +632,13 @@ footer {
     flex-direction: column;
     text-align: center;
   }
-  .group-icon-footer {
+  .group-icon-footer-discord {
+    display: none;
+  }
+  .group-icon-footer-linkedin {
+    display: none;
+  }
+  .group-icon-footer-github {
     display: none;
   }
 }
