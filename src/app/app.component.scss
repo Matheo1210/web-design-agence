@@ -22,6 +22,7 @@ nav {
   min-width: 7rem;
   max-width: 7rem;
   margin-right: 6rem;
+  cursor: pointer;
 }
 
 .element-navbar {
@@ -33,6 +34,7 @@ nav {
   padding: 0 1rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .icon-footer {
@@ -280,8 +282,8 @@ footer {
   justify-content: space-between;
   margin-left: 1rem;
   margin-right: 1rem;
-  height: 80px;
   align-items: center;
+  margin-top: auto;
 }
 
 .footer-logo img {
@@ -359,7 +361,7 @@ footer {
 @media screen and (max-width: 2000px) {
   .input {
     margin-bottom: 0;
-    margin-left: 25rem;
+    margin-left: 23rem;
   }
   .project {
     display: flex;
@@ -368,15 +370,18 @@ footer {
     font-size: 1.4rem;
   }
   .espacement-home {
-    width: 55rem;
-    margin-left: 25rem;
+    width: 50rem;
+    margin-left: 23rem;
   }
   .tableau {
-    margin-left: 25rem;
+    margin-left: 23rem;
   }
-
   .project-details {
     margin-left: -1rem;
+  }
+  .realisation {
+    display: flex;
+    margin-left: 7rem;
   }
 }
 
