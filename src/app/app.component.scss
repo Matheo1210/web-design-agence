@@ -562,3 +562,9 @@ footer {
     display: none;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .card {
+    max-width: 285px;
+  }
+}
