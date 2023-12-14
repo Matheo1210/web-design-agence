@@ -4,60 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Matheo</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      crossorigin="anonymous"
-    />
   </head>
   <body>
     <app-nav></app-nav>
     <app-projet></app-projet>
-    <footer>
-      <div class="footer">
-        <div
-          class="footer-bottom"
-          style="display: flex; align-items: center; font-size: 12px"
-        >
-          <img
-            style="
-              min-width: 100px;
-              max-width: 100px;
-              margin-right: 10px;
-              cursor: pointer;
-            "
-            src="../assets/Logo.png"
-            alt="logo"
-          />
-          <div
-            style="
-              display: flex;
-              gap: 1rem;
-              vertical-align: middle;
-              align-items: center;
-              border-left: 1px solid black;
-              padding-left: 1rem;
-            "
-          >
-            <p style="margin: 0">© 2023 Matheo</p>
-            <p routerLink="/nav" style="cursor: pointer">Mentions Légales</p>
-          </div>
-        </div>
-        <div class="group-icon-footer">
-          <a
-            class="icon-footer-linkedin"
-            href="https://www.linkedin.com/in/matheo-hanss-ba730025b/"
-          >
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a class="icon-footer-github" href="https://github.com/Matheo1210">
-            <i class="fab fa-github"></i>
-          </a>
-          <a class="icon-footer-discord" href="https://github.com/Matheo1210">
-            <i class="fab fa-discord"></i>
-          </a>
-        </div>
-      </div>
-    </footer>
+    <app-footer></app-footer>
   </body>
 </html>
