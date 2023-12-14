@@ -12,6 +12,10 @@
   font-family: "grandis-extended", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 :root {
   --primary-color: #fbbb2c;
   --secondary-color: #f4f3ef;
