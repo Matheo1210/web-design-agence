@@ -382,4 +382,31 @@
   .card {
     max-width: 285px;
   }
+  .project {
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .input-project {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    border-radius: 30px;
+    border: 1px solid #efeeea;
+    font-size: 7px;
+    text-align: left;
+    width: 100%;
+  }
+  .btn-project {
+    cursor: pointer;
+    padding: 1rem 1rem;
+    border: 1px solid #efeeea;
+    border-radius: 5px;
+    background: white;
+    width: 9rem;
+    font-size: 7px;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  .btn-category {
+    display: flex;
+    font-size: 9px;
+  }
 }
