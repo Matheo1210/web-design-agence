@@ -1,0 +1,71 @@
+<section class="input">
+  <div class="project">
+    <h1 class="title-project">Projet Réalisé</h1>
+    <div class="search-container">
+      <i class="fa fa-search"></i>
+      <form [formGroup]="searchForm">
+        <input
+          class="input-project"
+          type="text"
+          placeholder="Rechercher un projet..."
+          formControlName="searchQuery"
+          (input)="searchProjects()"
+          (keyup.enter)="activateSelectedProject()"
+        />
+      </form>
+    </div>
+  </div>
+</section>
+<section class="tableau">
+  <div class="category">
+    <button
+      class="btn-category"
+      [class.active]="selectedCategory === 'all' || !selectedCategory"
+      (click)="showCategory('all')"
+    >
+      <i class="fas fa-globe"></i> Tous
+    </button>
+    <button
+      class="btn-category"
+      [class.active]="selectedCategory === 'web'"
+      (click)="showCategory('web')"
+    >
+      <i class="fas fa-desktop"></i> Site Web
+    </button>
+    <button
+      class="btn-category"
+      [class.active]="selectedCategory === 'mobile'"
+      (click)="showCategory('mobile')"
+    >
+      <i class="fas fa-mobile-alt"></i> Application Mobile
+    </button>
+  </div>
+</section>
+<hr class="espacement-home" />
+<section class="realisation">
+  <div class="project-details" id="projectDetails">
+    <div class="project-buttons">
+      <button
+        class="btn-project d-flex align-items-center"
+        *ngFor="let project of projectsInCategory"
+        (click)="selectProject(project)"
+        [class.selected]="project.name === selectedProject"
+      >
+        <i class="fas fa-play mr-2"></i>
+        {{ project.name }}
+      </button>
+    </div>
+  </div>
+  <div class="project-description">
+    <div class="card">
+      <h1>{{ selectedProject }}</h1>
+      <div class="description-card">
+        <div
+          class="description-project-card"
+          [innerHTML]="projectDescription"
+        ></div>
+        <img class="img-card align-left" src="../assets/project.svg" />
+      </div>
+    </div>
+  </div>
+</section>

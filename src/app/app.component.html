@@ -11,107 +11,8 @@
     />
   </head>
   <body>
-    <div class="home">
-      <nav>
-        <img
-          routerLink="/home"
-          class="logo"
-          src="../../assets/Logo.png"
-          alt="logo"
-        />
-        <a class="element-navbar" routerLink="/home">Accueil</a>
-        <a class="element-navbar" style="color: black" routerLink="/about"
-          >Nos réalisations</a
-        >
-        <a class="element-navbar" routerLink="/blog">Blog</a>
-        <button class="btn-contact">Contact</button>
-      </nav>
-      <header>
-        <div class="title-home">
-          <h1 class="title">
-            Innovons Ensemble<br />
-            Votre Vision,<br />
-            Mon Expertise Web
-          </h1>
-          <p class="description-home">
-            Ensemble, donnons vie à vos projets en ligne.
-          </p>
-          <button class="btn-commencer">Commencer</button>
-        </div>
-        <img class="home-img" src="../assets/home.svg" alt="home-img" />
-      </header>
-    </div>
-    <section class="input">
-      <div class="project">
-        <h1 class="title-project">Projet Réalisé</h1>
-        <div class="search-container">
-          <i class="fa fa-search"></i>
-          <form [formGroup]="searchForm">
-            <input
-              class="input-project"
-              type="text"
-              placeholder="Rechercher un projet..."
-              formControlName="searchQuery"
-              (input)="searchProjects()"
-              (keyup.enter)="activateSelectedProject()"
-            />
-          </form>
-        </div>
-      </div>
-    </section>
-    <section class="tableau">
-      <div class="category">
-        <button
-          class="btn-category"
-          [class.active]="selectedCategory === 'all' || !selectedCategory"
-          (click)="showCategory('all')"
-        >
-          <i class="fas fa-globe"></i> Tous
-        </button>
-        <button
-          class="btn-category"
-          [class.active]="selectedCategory === 'web'"
-          (click)="showCategory('web')"
-        >
-          <i class="fas fa-desktop"></i> Site Web
-        </button>
-        <button
-          class="btn-category"
-          [class.active]="selectedCategory === 'mobile'"
-          (click)="showCategory('mobile')"
-        >
-          <i class="fas fa-mobile-alt"></i> Application Mobile
-        </button>
-      </div>
-    </section>
-    <hr class="espacement-home" />
-    <section class="realisation">
-      <div class="project-details" id="projectDetails">
-        <div class="project-buttons">
-          <button
-            class="btn-project d-flex align-items-center"
-            *ngFor="let project of projectsInCategory"
-            (click)="selectProject(project)"
-            [class.selected]="project.name === selectedProject"
-          >
-            <i class="fas fa-play mr-2"></i>
-            {{ project.name }}
-          </button>
-        </div>
-      </div>
-      <div class="project-description">
-        <div class="card">
-          <h1>{{ selectedProject }}</h1>
-          <div class="description-card">
-            <div
-              class="description-project-card"
-              [innerHTML]="projectDescription"
-            ></div>
-            <img class="img-card align-left" src="../assets/project.svg" />
-          </div>
-        </div>
-      </div>
-    </section>
+    <app-nav></app-nav>
+    <app-projet></app-projet>
     <footer>
       <div class="footer">
         <div
@@ -139,9 +40,7 @@
             "
           >
             <p style="margin: 0">© 2023 Matheo</p>
-            <a routerLink="/mentions-legales" style="cursor: pointer">
-              Mentions Légales
-            </a>
+            <p routerLink="/nav" style="cursor: pointer">Mentions Légales</p>
           </div>
         </div>
         <div class="group-icon-footer">

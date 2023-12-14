@@ -4,9 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { LegalesComponent } from './legales/legales.component';
+import { NavComponent } from './nav/nav.component';
+import { ProjetComponent } from './projet/projet.component';
 
 @NgModule({
-  declarations: [AppComponent, LegalesComponent],
+  declarations: [AppComponent, LegalesComponent, NavComponent, ProjetComponent],
   imports: [BrowserModule, ReactiveFormsModule],
   bootstrap: [AppComponent],
 })
