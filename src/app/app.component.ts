@@ -34,16 +34,6 @@ export class AppComponent implements OnInit {
   private initializeProjectDescriptions(): void {
     this.projectsInCategory = [
       {
-        name: 'Faurecia',
-        description:
-          'Une expérience utilisateur optimale, assurant une parfaite réactivité même face à des volumes de données massifs, grâce à une conception UX méticuleuse et adaptée.',
-      },
-      {
-        name: 'QuizKick',
-        description:
-          'Le projet QuizKick se caractérise par une interface utilisateur simple tout en offrant une multitude de fonctionnalités pour la création de quiz.',
-      },
-      {
         name: 'Mercy-Time',
         description:
           'MercyTime offre une expérience utilisateur très design, assurant une navigation agréable sur le site.',
@@ -63,12 +53,19 @@ export class AppComponent implements OnInit {
       this.initializeProjectDescriptions();
     } else if (category === 'web') {
       this.projectsInCategory = [
-        { name: 'Faurecia', description: 'Description de Faurecia.' },
-        { name: 'Quizkick', description: 'Description de Quizkick.' },
+        {
+          name: 'Mercy-Time',
+          description:
+            'MercyTime offre une expérience utilisateur très design, assurant une navigation agréable sur le site.',
+        },
       ];
     } else if (category === 'mobile') {
       this.projectsInCategory = [
-        { name: 'NeverLost', description: 'Description de NeverLost.' },
+        {
+          name: 'NeverLost',
+          description:
+            'NeverLost, dotée d un design moderne, permet à l utilisateur de trouver son chemin de manière simple et rapide.',
+        },
       ];
     }
   }
