@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LegalesComponent } from './legales/legales.component';
 import { NavComponent } from './nav/nav.component';
 import { ProjetComponent } from './projet/projet.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ProjetComponent } from './projet/projet.component';
     NavComponent,
     ProjetComponent,
     FooterComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule, ReactiveFormsModule, AppRoutingModule],
   bootstrap: [AppComponent],

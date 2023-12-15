@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Matheo - Mentions Légales</title>
+    <title>Matheo - Contact</title>
   </head>
   <body>
     <div class="home">
@@ -19,23 +19,21 @@
           >Mes réalisations</a
         >
         <a class="element-navbar" routerLink="/blog">Blog</a>
-        <button routerLink="/contact" class="btn-contact">Contact</button>
+        <button class="btn-contact">Contact</button>
       </nav>
     </div>
-    <div class="title-legales">
-      <h1 class="title">Mentions Légales</h1>
-      <p class="description">
-        Ce site est édité par Matheo, auto-entrepreneur, dont le siège social
-        est situé à Strasbourg.
-        <br />
-        <br />
-        Enregistré sous le numéro SIRET [NUM], l'hébergement de ce site est
-        assuré par Vercel.<br />
-      </p>
-      <br />
-      <br />
-      <p class="mise-jour">Dernière mise à jour : Décembre 2023</p>
-    </div>
+    <form>
+      <label for="name">Nom:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <input type="submit" value="Envoyer" />
+    </form>
     <app-footer style="position: fixed; bottom: 0; width: 100%"></app-footer>
   </body>
 </html>
