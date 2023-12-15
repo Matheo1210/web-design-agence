@@ -71,7 +71,7 @@
 }
 
 .btn-category:hover {
-  background-color: #fbbb2c;
+  background-color: var(--primary-color);
 }
 
 .btn-category i {
@@ -121,7 +121,7 @@
 }
 
 .btn-project:hover {
-  background-color: #fbbb2c;
+  background-color: var(--primary-color);
   color: var(--color-text);
 }
 
@@ -174,7 +174,7 @@
 }
 
 .btn-select {
-  background-color: #007bff;
+  background-color: var(--primary-color);
   color: #fff;
   padding: 10px 15px;
   border: none;
@@ -187,7 +187,7 @@
 }
 
 .selected {
-  background-color: #fbbb2c;
+  background-color: var(--primary-color);
 }
 
 @media screen and (min-width: 1500px) and (max-width: 1600px) {

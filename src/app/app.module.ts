@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { LegalesComponent } from './legales/legales.component';
@@ -17,7 +17,7 @@ import { ProjetComponent } from './projet/projet.component';
     ProjetComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, ReactiveFormsModule, RouterModule.forRoot([])],
+  imports: [BrowserModule, ReactiveFormsModule, AppRoutingModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
