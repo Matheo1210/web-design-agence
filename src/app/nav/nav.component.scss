@@ -28,6 +28,10 @@ nav {
   cursor: pointer;
 }
 
+.logo:hover {
+  transform: scale(1.1);
+}
+
 .element-navbar {
   text-decoration: none;
   color: #4c4940;
@@ -38,6 +42,13 @@ nav {
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.element-navbar:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+  transform: scale(1.1);
 }
 
 .btn-contact {

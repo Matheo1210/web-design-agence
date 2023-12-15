@@ -92,6 +92,18 @@ footer {
   transform: scale(1.1);
 }
 
+.Mentions-legales {
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.Mentions-legales:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: 768px) {
   .footer {
     flex-direction: column;
