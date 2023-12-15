@@ -193,21 +193,6 @@
   background-color: #fbbb2c;
 }
 
-@media screen and (max-width: 2000px) {
-  .project {
-    display: flex;
-  }
-  .title-project {
-    font-size: 1.4rem;
-  }
-  .espacement-home {
-    width: 52rem;
-  }
-  .project-details {
-    margin-left: -1rem;
-  }
-}
-
 @media screen and (max-width: 1500px) {
   .input {
     margin-bottom: 0;
@@ -219,7 +204,7 @@
     font-size: 1.4rem;
   }
   .espacement-home {
-    width: 50rem;
+    width: 51rem;
   }
   .project-details {
     margin-left: -3rem;
