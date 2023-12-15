@@ -103,6 +103,11 @@ footer {
   max-width: 100px;
   margin-right: 10px;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo-footer:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 768px) {
