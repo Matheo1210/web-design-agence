@@ -68,13 +68,10 @@
   margin-right: 10px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  transition: transform 0.3s ease;
 }
 
 .btn-category:hover {
   background-color: #fbbb2c;
-  color: var(--color-text);
-  transform: scale(1.1);
 }
 
 .btn-category i {
