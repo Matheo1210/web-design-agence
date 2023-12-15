@@ -110,6 +110,15 @@ footer {
   transform: scale(1.1);
 }
 
+.footer-bottom-text {
+  display: flex;
+  gap: 1rem;
+  vertical-align: middle;
+  align-items: center;
+  border-left: 1px solid black;
+  padding-left: 1rem;
+}
+
 @media screen and (max-width: 768px) {
   .footer {
     text-align: center;
@@ -128,5 +137,21 @@ footer {
 @media screen and (max-width: 425px) {
   .footer {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .footer-bottom-text {
+    border-left: none;
+    padding-left: 0;
+    font-size: 0.5rem;
+    display: flex;
+    margin: auto;
+  }
+  .group-icon-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
   }
 }
