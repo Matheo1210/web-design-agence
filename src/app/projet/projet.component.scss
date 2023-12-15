@@ -49,8 +49,7 @@
 
 .tableau {
   display: flex;
-  justify-content: flex-start;
-  margin-left: 31rem;
+  justify-content: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
@@ -203,9 +202,6 @@
   }
   .espacement-home {
     width: 51rem;
-    margin-left: 36rem;
-  }
-  .tableau {
     margin-left: 36rem;
   }
   .project-details {
