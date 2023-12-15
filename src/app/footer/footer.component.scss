@@ -104,6 +104,17 @@ footer {
   transform: scale(1.1);
 }
 
+.logo-footer {
+  min-width: 100px;
+  max-width: 100px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.logo-footer:hover {
+  transform: scale(1.1);
+}
+
 @media screen and (max-width: 768px) {
   .footer {
     flex-direction: column;
