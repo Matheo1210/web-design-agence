@@ -193,7 +193,7 @@
   background-color: #fbbb2c;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 1500px) and (max-width: 1600px) {
   .realisation {
     margin-left: -3rem;
   }
