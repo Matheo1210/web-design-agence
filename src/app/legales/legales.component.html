@@ -6,11 +6,33 @@
     <title>Matheo - Mentions Légales</title>
   </head>
   <body>
-    <app-nav></app-nav>
-    <div class="legales-content">
-      <h2>Mentions Légales</h2>
-      <p>Ceci est le contenu des mentions légales...</p>
-      <!-- Ajoute ton contenu ici -->
+    <div class="home">
+      <nav>
+        <img
+          routerLink="/"
+          class="logo"
+          src="../../assets/Logo.png"
+          alt="logo"
+        />
+        <a class="element-navbar" routerLink="/">Accueil</a>
+        <a class="element-navbar" style="color: black" routerLink="/about"
+          >Mes réalisations</a
+        >
+        <a class="element-navbar" routerLink="/blog">Blog</a>
+        <button class="btn-contact">Contact</button>
+      </nav>
     </div>
+    <div class="title-legales">
+      <h1 class="title">Mentions Légales</h1>
+      <p class="description">
+        Ce site est édité par Matheo, auto-entrepreneur, dont le siège social
+        est situé à Strasbourg.
+        <br />
+        <br />
+        Enregistré sous le numéro SIRET [NUM], l'hébergement de ce site est
+        assuré par Vercel.<br />
+      </p>
+    </div>
+    <app-footer style="position: fixed; bottom: 0; width: 100%"></app-footer>
   </body>
 </html>

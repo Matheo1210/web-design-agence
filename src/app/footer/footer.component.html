@@ -4,10 +4,17 @@
       class="footer-bottom"
       style="display: flex; align-items: center; font-size: 12px"
     >
-      <img class="logo-footer" src="../assets/Logo.png" alt="logo" />
+      <img
+        class="logo-footer"
+        [routerLink]="['/']"
+        src="../assets/Logo.png"
+        alt="logo"
+      />
       <div class="footer-bottom-text">
         <p style="margin: 0">© 2023 Matheo</p>
-        <p routerLink="/legales" class="Mentions-legales">Mentions Légales</p>
+        <p [routerLink]="['/legales']" class="Mentions-legales">
+          Mentions Légales
+        </p>
       </div>
     </div>
     <div class="group-icon-footer">

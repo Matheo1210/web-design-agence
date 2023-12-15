@@ -1,8 +1,13 @@
 <div class="home">
   <nav>
-    <img routerLink="/" class="logo" src="../../assets/Logo.png" alt="logo" />
-    <a class="element-navbar" routerLink="/">Accueil</a>
-    <a class="element-navbar" style="color: black" routerLink="/about"
+    <img
+      [routerLink]="['/']"
+      class="logo"
+      src="../../assets/Logo.png"
+      alt="logo"
+    />
+    <a class="element-navbar" [routerLink]="['/']">Accueil</a>
+    <a class="element-navbar" style="color: black" routerLink="/realisations"
       >Mes réalisations</a
     >
     <a class="element-navbar" routerLink="/blog">Blog</a>
