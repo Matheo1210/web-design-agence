@@ -22,18 +22,21 @@
         <button class="btn-contact">Contact</button>
       </nav>
     </div>
-    <form>
-      <label for="name">Nom:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4" required></textarea>
-
-      <input type="submit" value="Envoyer" />
-    </form>
-    <app-footer style="position: fixed; bottom: 0; width: 100%"></app-footer>
+    <div class="card">
+      <div class="header-form">
+        <i class="fas fa-envelope"></i>
+        <p>Une réponse à votre question sera donnée en moins de 24 heures.</p>
+      </div>
+      <form>
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <input type="submit" value="Envoyer" />
+      </form>
+    </div>
+    <app-footer style="bottom: 0; width: 100%"></app-footer>
   </body>
 </html>
