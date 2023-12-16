@@ -96,6 +96,10 @@ input[type="submit"]:hover {
   margin-bottom: 15px;
 }
 
+.fa-envelope:before {
+  color: var(--primary-color);
+}
+
 @media screen and (max-width: 768px) {
   nav {
     flex-direction: column;
