@@ -136,6 +136,10 @@ footer {
 @media screen and (max-width: 425px) {
   .footer {
     flex-direction: column;
+    gap: 0.5rem;
+  }
+  .group-icon-footer {
+    display: none;
   }
 }
 
@@ -148,9 +152,6 @@ footer {
     margin: auto;
   }
   .group-icon-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
+    display: none;
   }
 }
