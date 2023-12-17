@@ -122,14 +122,18 @@ input[type="submit"]:hover {
   }
   .btn-contact {
     margin-left: 0;
+    margin-bottom: 2rem;
   }
   nav a {
     margin: 10px 0;
   }
   .card {
     width: 65%;
-    margin-top: 6rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
+  }
+  .title-contact {
+    font-size: 1.5rem;
   }
 }
 
