@@ -21,4 +21,4 @@ Assurez-vous d'avoir Node.js et npm installés sur votre machine avant de commen
 1. Clonez ce dépôt sur votre machine locale.
 
 ```bash
-git clone
+git clone git@github.com:Matheo1210/web-design-agence.git
